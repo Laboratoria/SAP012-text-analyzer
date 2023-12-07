@@ -187,50 +187,50 @@ relacionados a cada objetivo de aprendizado.
 
 - **Uso de HTML semântico**
 
-  + [ ] A aplicação possui um cabeçalho composto por um
+  + [OK] A aplicação possui um cabeçalho composto por um
         [`<header>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/header)
         que é pai de um
         [`<h1>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Heading_Elements)
         com o texto `Analisador de texto`. Para que você possa praticar mais, esses
         elementos não podem ter atributos `id`, `name` ou `class`.
 
-  + [ ] A aplicação utiliza um
+  + [OK] A aplicação utiliza um
         [`<textarea>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/textarea)
         com o atributo `name` com o valor `user-input` para permitir à usuária
         inserir um texto. Para que você possa praticar mais, este elemento não pode
         ter atributos `id` ou `class`.
 
-  + [ ] A aplicação utiliza uma
+  + [OK] A aplicação utiliza uma
         [`<ul>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ul)
         com 6 filhos [`<li>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/li),
         um para exibir cada métrica. Para que você possa praticar mais, esses
         elementos não podem ter atributos `id`, `name` ou filhos.
 
-  + [ ] O [`<li>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/li)
+  + [OK] O [`<li>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/li)
         para exibir a _contagem de palavras_ deve ter um atributo
         `data-testid` com o valor `word-count`.
 
-  + [ ] O [`<li>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/li)
+  + [OK] O [`<li>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/li)
         para exibir a _contagem de caracteres_ deve ter um atributo
         `data-testid` com o valor `character-count`.
 
-  + [ ] O [`<li>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/li)
+  + [OK] O [`<li>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/li)
         para exibir a _contagem de caracteres excluindo espaços e sinais de pontuação_
         deve ter um atributo `data-testid` com o valor `character-no-spaces-count`.
 
-  + [ ] O [`<li>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/li)
+  + [OK] O [`<li>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/li)
         para exibir a _contagem de números_ deve ter um atributo
         `data-testid` com o valor `number-count`.
 
-  + [ ] O [`<li>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/li)
+  + [OK] O [`<li>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/li)
         para exibir a _soma total de números_ deve ter um atributo
         `data-testid` com o valor `number-sum`.
 
-  + [ ] O [`<li>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/li)
+  + [OK] O [`<li>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/li)
         para exibir o _comprimento médio das palavras_ deve ter um atributo
         `data-testid` com o valor `word-length-average`.
 
-  + [ ] A aplicação possui um rodapé composto por um
+  + [OK] A aplicação possui um rodapé composto por um
         [`<footer>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/footer)
         que é pai de um
         [`<p>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/p)
@@ -238,7 +238,7 @@ relacionados a cada objetivo de aprendizado.
         Para que você possa praticar mais, esses elementos não podem
         ter atributos `id`, `name` ou `class`.
 
-  + [ ] A aplicação utiliza um
+  + [OK] A aplicação utiliza um
         [`<button>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/button)
         com o atributo `id` com o valor `reset-button` para permitir à usuária,
         através de um clique, limpar o conteúdo da caixa de texto.
@@ -397,15 +397,15 @@ relacionados a cada objetivo de aprendizado.
 
 - **GitHub: Criação de conta e repositórios, configuração de chaves SSH**
 
-  + [ ] A estudante criou uma conta no Github.
+  + [OK] A estudante criou uma conta no Github.
 
-  + [ ] A estudante configurou sua conta do Github com uma chave SSH.
+  + [OK] A estudante configurou sua conta do Github com uma chave SSH.
 
 - **Git: Controle de versões com git (clone, add, commit, push)**
 
-  + [ ] A estudante criou um _fork_ para o projeto.
+  + [OK] A estudante criou um _fork_ para o projeto.
 
-  + [ ] A estudante clonou seu repositório usando uma chave SSH.
+  + [OK] A estudante clonou seu repositório usando uma chave SSH.
 
   + [ ] A estudante criou _commits_ e os salvou no Github.
 
