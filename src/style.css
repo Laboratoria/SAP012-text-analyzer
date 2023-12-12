@@ -27,7 +27,7 @@ textarea[name="user-input"] {
     box-sizing: border-box;
 }
 
-button#reset-button {
+#reset-button {
     width: 20%;
     height: 30px;
     display: block;
