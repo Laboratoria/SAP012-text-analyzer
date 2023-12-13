@@ -1,17 +1,28 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 body {
-    text-align: center;
-    background-color: #fee9a6;
-    margin: auto 50px;
+    background-color: #fff;
+    margin: 0;
+}
+
+div {
+    width: 70%;
+    height: auto;
+    background-color: #fedfae;
     display: block;
+    margin: 60px auto;
+    text-align: center;
+    padding: 30px;
+    box-sizing: content-box;
+    border-radius: 10px;
 }
 
 header {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     color: #660860;
 }
 
@@ -19,6 +30,8 @@ textarea[name="user-input"] {
     width: 50%;
     height: 200px;
     display: block;
+    margin: 30px auto;
+    align-self: center;
     font-size: medium;
     background-color: #fec0ab;
     border-radius: 8px;
@@ -32,6 +45,8 @@ textarea[name="user-input"] {
     height: 30px;
     display: block;
     font-size: large;
+    margin: auto;
+    align-self: center;
     background-color: #660860;
     color: #fff;
     border-radius: 5px;
@@ -40,15 +55,22 @@ textarea[name="user-input"] {
 }
 
 .counter {
-    margin: auto;
-    background: scroll;
+    margin: 5px;
+    display: block;
+    padding: 10px;
     border: 1px #9380b7;
     padding: auto;
     text-align: center;
-    display: inline;
+    background-color: #fff;
+    display: inline-block;
+    font-size: medium;
+    list-style-type: none;
+    box-sizing: border-box;
+    border-radius: 7px;
 }
 
 footer {
     color: #9380b7;
     text-align: center;
+    font-size: small;
 }
