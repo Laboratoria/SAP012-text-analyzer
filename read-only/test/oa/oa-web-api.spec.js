@@ -84,9 +84,9 @@ describe('Uso de selectores del DOM', () => {
 });
 
 describe('Manejo de eventos del DOM', () => {
-  it('Se registra un Event Listener para el evento "textarea"', () => {
+  it('Se registra un Event Listener para el evento "input"', () => {
     expect(
-      addEventListenerCalls.some((node) => node.arguments[0].value === "textarea")
+      addEventListenerCalls.some((node) => node.arguments[0].value === "input")
     ).toBeTruthy();
   });
 
