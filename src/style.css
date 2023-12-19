@@ -32,7 +32,7 @@ textarea[name="user-input"] {
     display: block;
     margin: 30px auto;
     align-self: center;
-    font-size: medium;
+    font-size: small;
     background-color: #fec0ab;
     border-radius: 8px;
     border: 1px solid #9380b7;
@@ -52,6 +52,8 @@ textarea[name="user-input"] {
     border-radius: 5px;
     border: none;
     box-sizing: border-box;
+    cursor: pointer;
+
 }
 
 .counter {

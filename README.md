@@ -1,5 +1,25 @@
 # Analisador de Texto
 
+O objetivo deste projeto foi criar um analisador de texto capaz de contabilizar quantidades de palavras e números, caracteres com e sem espaço, comprimento médio das palavras e soma total dos números presentes no texto.
+
+Foram seguidos os critérios mínimos do projeto - situados ao final deste documento -, com incrementações de estilo ao longo do desenvolvimento.
+
+# Etapas
+
+As etapas seguidas para o desenvolvimento do projeto foram, respectivamente:
+
+1) criação de conta no Github e download dos programas necessários para o desenvolvimento do projeto;
+2) fork do repositório, criação de chave SSH do projeto e clonagem do repositório;
+3) criação de protótipo de baixa fidelidade no figma (https://www.figma.com/file/NLJHZleLgDKRHXNzFtQ9q7/Prot%C3%B3tipo-P1-Laborat%C3%B3ria?type=whiteboard&node-id=0-1&t=yquOWUvaO06hHkQf-0);
+4) criação de árvore HTML no protótipo buscando visualizar a hierarquia do código;
+5) desenvolvimento do código HTML;
+6) estilização do projeto em CSS;
+7) criação de eventos DOM no projeto;
+8) codificação as análises de texto e números;
+9) testes;
+10) publicação no github.
+
+
 ## Índice
 
 - [1. Considerações gerais](#1-considerações-gerais)
@@ -274,7 +294,7 @@ relacionados a cada objetivo de aprendizado.
 
 - **Modelo de caixa (box model): borda, margem, preenchimento**
 
-  + [ ] As
+  + [OK] As
         [`classes CSS`](https://developer.mozilla.org/pt-BR/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#class_selectors)
         dos
         [`<li>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/li)
@@ -387,7 +407,7 @@ relacionados a cada objetivo de aprendizado.
 
 - **Uso de linter (ESLINT)**
 
-  + [ ] Ao executar o linter, não são exibidos erros de formato e estilo.
+  + [OK] Ao executar o linter, não são exibidos erros de formato e estilo.
 
 - **Uso de identificadores descritivos (Nomenclatura e Semântica)**
 
@@ -407,7 +427,7 @@ relacionados a cada objetivo de aprendizado.
 
   + [OK] A estudante clonou seu repositório usando uma chave SSH.
 
-  + [ ] A estudante criou _commits_ e os salvou no Github.
+  + [OK] A estudante criou _commits_ e os salvou no Github.
 
 - **GitHub: Implantação com GitHub Pages**
 
@@ -421,11 +441,11 @@ relacionados a cada objetivo de aprendizado.
 
 - **Projetar em diferentes níveis de fidelidade**
 
-  + [ ] A estudante criou protótipos de baixa fidelidade para a UI (interface gráfica).
+  + [OK] A estudante criou protótipos de baixa fidelidade para a UI (interface gráfica).
 
 - **Seguir os princípios básicos do design visual**
 
-  + [ ] Foram consideradas as regras básicas de
+  + [OK] Foram consideradas as regras básicas de
         [design visual](https://coda.io/d/Bootcamp-UX-Contenido_dqkqk2rV9Z2/Reglas-basicas-de-diseno-visual_suVcO)
         para projetar a UI (interface gráfica).
 
