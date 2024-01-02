@@ -324,7 +324,7 @@ relacionados a cada objetivo de aprendizado.
         para ouvir o evento `keyup` do `<textarea>` e atualizar as métricas
         quando o texto for digitado na caixa de texto.
 
-  + [ ] A aplicação registra um
+  + [OK] A aplicação registra um
         [Event Listener](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener)
         para ouvir o evento `click` do `<button>` que limpa o conteúdo da caixa
         de texto.
