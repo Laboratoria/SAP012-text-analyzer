@@ -1,4 +1,11 @@
-const analyzer = {  
+let caixaTexto = document.getElementsByName(".user-input").textContent;
+
+for (let i = 0; caixaTexto.length >= i; i++) {
+  console.log("testou o loop");
+
+};
+
+const analyzer = {
   getWordCount: (text) => {
     //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
   },
@@ -8,7 +15,7 @@ const analyzer = {
   getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
   },
-  getAverageWordLength: (text) => {    
+  getAverageWordLength: (text) => {
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
   },
   getNumberCount: (text) => {

@@ -40,6 +40,11 @@ textarea[name="user-input"] {
     box-sizing: border-box;
 }
 
+textarea[:placeholder] {
+    font-size: medium;
+    text-align: center;
+}
+
 #reset-button {
     width: 20%;
     height: 30px;
