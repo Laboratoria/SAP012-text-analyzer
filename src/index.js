@@ -1,6 +1,14 @@
 import analyzer from './analyzer.js';
 
-document.getElementById("reset-button").addEventListener("click", limparTexto());
+let areaTexto = document.querySelector("[name='user-input']");
+let palavras = document.querySelector("[data-testid='word-count']");
+let caracteres = document.querySelector("[data-testid='character-count']");
+let semEspacos = document.querySelector("[data-testid='character-no-spaces-count']");
+let numeros = document.querySelector("[data-testid='number-count']");
+let soma = document.querySelector("[data-testid='number-sum']");
+let comprimento = document.querySelector("[data-testid='word-lenght-average']");
+
+document.getElementById("reset-button").addEventListener("click", limparTexto);
 
 function limparTexto() {
     if (areaTexto != 0) {
@@ -8,8 +16,17 @@ function limparTexto() {
     } else {
         return;
     }
-    console.log("ouvi o clique");
+    console.log("ouvi o clique! ;)");
 }
+
+areaTexto.addEventListener("keyup", function () {
+    caracteres.textContent = areaTexto.value.length + " caractere(s)";
+    palavras.textContent = analyzer.getWordCount(text) + " palavra(s)";
+    semEspacos.textContent = analyzer.getCharacterCountExcludingSpaces(text) + " caracteres sem espaço";
+    //numeros
+    //soma
+    comprimento.textContent = "Comprimento médio das palavras = " + analyzer.getAverageWordLength(text);
+})
 // para contar caracteres, preciso que:
 // selecionar os elementos html a serem alterados;
 // o código leia a textarea e descubra se seu conteúdo é diferente de 0;
