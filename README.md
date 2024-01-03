@@ -301,7 +301,7 @@ relacionados a cada objetivo de aprendizado.
 
   + [ ] A aplicação registra um
         [Event Listener](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener)
-        para ouvir o evento `keyup` do `<textarea>` e atualizar as métricas
+        para ouvir o evento `input` do `<textarea>` e atualizar as métricas
         quando o texto for digitado na caixa de texto.
 
   + [ ] A aplicação registra um
