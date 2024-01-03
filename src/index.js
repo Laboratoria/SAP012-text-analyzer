@@ -3,7 +3,11 @@ import analyzer from './analyzer.js';
 document.getElementById("reset-button").addEventListener("click", limparTexto());
 
 function limparTexto() {
-    caixaTexto.input = "";
+    if (areaTexto != 0) {
+        areaTexto.value = "";
+    } else {
+        return;
+    }
     console.log("ouvi o clique");
 }
 // para contar caracteres, preciso que:
