@@ -7,12 +7,13 @@ let semEspacos = document.querySelector("[data-testid='character-no-spaces-count
 let numeros = document.querySelector("[data-testid='number-count']");
 let soma = document.querySelector("[data-testid='number-sum']");
 let comprimento = document.querySelector("[data-testid='word-lenght-average']");
+let contadores = document.querySelectorAll(".counter");
 
 document.getElementById("reset-button").addEventListener("click", limparTexto);
 
 function limparTexto() {
     if (areaTexto != 0) {
-        areaTexto.value = "";
+        location.reload();
     } else {
         return;
     }
@@ -20,12 +21,12 @@ function limparTexto() {
 }
 
 areaTexto.addEventListener("keyup", function () {
-    caracteres.textContent = areaTexto.value.length + " caractere(s)";
-    palavras.textContent = analyzer.getWordCount(text) + " palavra(s)";
-    semEspacos.textContent = analyzer.getCharacterCountExcludingSpaces(text) + " caracteres sem espaço";
-    //numeros
+    caracteres.textContent = analyzer.getCharacterCount(areaTexto.value) + " caractere(s)";
+    palavras.textContent = analyzer.getWordCount(areaTexto.value) + " palavra(s)";
+    semEspacos.textContent = analyzer.getCharacterCountExcludingSpaces(areaTexto.value) + " caracteres sem espaço";
+    numeros.textContent = analyzer.getNumberCount(areaTexto.value) + " números";
     //soma
-    comprimento.textContent = "Comprimento médio das palavras = " + analyzer.getAverageWordLength(text);
+    comprimento.textContent = "Comprimento médio das palavras = " + analyzer.getAverageWordLength(areaTexto.value);
 })
 // para contar caracteres, preciso que:
 // selecionar os elementos html a serem alterados;
