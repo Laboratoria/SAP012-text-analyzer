@@ -7,7 +7,7 @@ let semEspacos = document.querySelector("[data-testid='character-no-spaces-count
 let numeros = document.querySelector("[data-testid='number-count']");
 let soma = document.querySelector("[data-testid='number-sum']");
 let comprimento = document.querySelector("[data-testid='word-lenght-average']");
-let contadores = document.querySelectorAll(".counter");
+
 
 document.getElementById("reset-button").addEventListener("click", limparTexto);
 
@@ -25,7 +25,7 @@ areaTexto.addEventListener("keyup", function () {
     palavras.textContent = analyzer.getWordCount(areaTexto.value) + " palavra(s)";
     semEspacos.textContent = analyzer.getCharacterCountExcludingSpaces(areaTexto.value) + " caracteres sem espaço";
     numeros.textContent = analyzer.getNumberCount(areaTexto.value) + " números";
-    //soma
+    soma.textContent = "Soma total dos números = " + analyzer.getNumberSum(areaTexto.value);
     comprimento.textContent = "Comprimento médio das palavras = " + analyzer.getAverageWordLength(areaTexto.value);
 })
 // para contar caracteres, preciso que:
