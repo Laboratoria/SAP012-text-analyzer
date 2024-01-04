@@ -6,8 +6,7 @@ let caracteres = document.querySelector("[data-testid='character-count']");
 let semEspacos = document.querySelector("[data-testid='character-no-spaces-count']");
 let numeros = document.querySelector("[data-testid='number-count']");
 let soma = document.querySelector("[data-testid='number-sum']");
-let comprimento = document.querySelector("[data-testid='word-lenght-average']");
-
+let comprimento = document.querySelector("[data-testid='word-length-average']");
 
 document.getElementById("reset-button").addEventListener("click", limparTexto);
 
@@ -36,13 +35,6 @@ areaTexto.addEventListener("keyup", function () {
 
 /*let mostradores = Object.values(analyzer).map((contadores) => {
 });*/
-
-// function metricas() {
-//     for (contadores in analyzer) {
-//         document.querySelectorAll(".counter").innerHTML = null + "";
-//         console.log("funcionou");
-//     }
-// };
 
 // para limpar o texto, preciso que:
 //1) o botão funcione; ok

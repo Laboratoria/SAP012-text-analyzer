@@ -15,14 +15,18 @@ const analyzer = {
     return text.length;
   },
   getCharacterCountExcludingSpaces: (text) => {
+
+
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
   },
   getAverageWordLength: (text) => {
-    /*for (let i = 0; i < cortaPalavra.length; i++) {
-      compMedio += cortaPalavra[i].length;
-    }*/
+    /*  for (let i = 0; i < cortaPalavra.length; i++) {
+        compMedio += cortaPalavra[i].length;
+      }*/
   },
   getNumberCount: (text) => {
+    const number = parseInt(text);
+
     if (text === Number) {
       return // total de números presentes no texto
     } else {
