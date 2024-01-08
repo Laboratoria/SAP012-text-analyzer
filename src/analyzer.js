@@ -1,44 +1,46 @@
 const analyzer = {
   getWordCount: (text) => {
-    const cortaPalavra = text.split(" ");
+    const cortaPalavra = text.split(" ").filter((word) => word !== "");
     return cortaPalavra.length;
   },
-  //o que eu queria fazer: o contador não pode contar os espaços como palavras e não pode iniciar em 1;
   getCharacterCount: (text) => {
     return text.length;
   },
   getCharacterCountExcludingSpaces: (text) => {
-    const espacos = text.replaceAll(" ", "").length;
-    return espacos;
+    const spaces = text.replace(/[^a-zA-Z0-9]+/g, '').length;
+    return spaces;
 
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
   },
   getAverageWordLength: (text) => {
-    //   const apenasPalavras = text.split(" ");
-    //   if (apenasPalavras.length > 0) {
-    //     return parseFloat(apenasPalavras);
-    //   } else {
-    //     return "0";
-    //   }
-  },
-
-  // compMedio += cortaPalavra[i].length.parseFloat(text);
-  // return compMedio.valueOf(text);
-  getNumberCount: (text) => {
-    const numbers = text.replace(/[^0-9]/g, '');
-    if (parseInt(numbers) >= 0) {
-      return numbers.length;
+    const cortaPalavra = text.split(" ").filter((word) => word !== "");
+    const totalPalavras = cortaPalavra.join("");
+    if (text) {
+      return totalPalavras.length / cortaPalavra.length;
     } else {
-      return "0";
+      return 0;
     }
   },
-  //},
-  //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
+  getNumberCount: (text) => {
+    const numbers = text.replace(/d+/g).split(" ").filter((word) => word !== "");
+    if (numbers === NaN || numbers === 0) {
+      return "0";
+    }
+    if (parseInt(numbers) >= 0) {
+      return numbers.length; {
+      }
+    }
+  },
   getNumberSum: (text) => {
-    const somaNum = parseInt(text) + parseFloat(text);
-    // reduce(), mas não sei onde
-    //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
+    let total = 0;
+    const regex = text.replace(/d+/g).split(" ").filter((word) => word !== "");
+    console.log(regex);
+    for (let i = 0; i < regex.length; i++) {
+      total += parseInt(regex[i]);
+      console.log(regex[i]);
+    }
+    return total;
+    //precisa retornar a soma dos números;
   },
 };
-
 export default analyzer;

@@ -22,12 +22,12 @@ div {
 
 header {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     color: #660860;
 }
 
 textarea[name="user-input"] {
-    width: 50%;
+    width: 80%;
     height: 200px;
     display: block;
     margin: 30px auto;
@@ -36,7 +36,7 @@ textarea[name="user-input"] {
     background-color: #fec0ab;
     border-radius: 8px;
     border: 1px solid #9380b7;
-    box-shadow: 2px #000;
+    box-shadow: 2px #660860;
     box-sizing: border-box;
 }
 
@@ -47,9 +47,11 @@ textarea[:placeholder] {
 
 #reset-button {
     width: 20%;
-    height: 30px;
+    height: 40px;
+    padding: 10px;
     display: block;
-    font-size: large;
+    font-size-adjust: 10;
+    text-align: center;
     margin: auto;
     align-self: center;
     background-color: #660860;
@@ -58,7 +60,13 @@ textarea[:placeholder] {
     border: none;
     box-sizing: border-box;
     cursor: pointer;
+    flex-grow: 3;
 
+}
+
+.counter-list {
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .counter {
@@ -66,18 +74,22 @@ textarea[:placeholder] {
     display: block;
     padding: 10px;
     border: 1px #9380b7;
-    padding: auto;
-    text-align: center;
+    align-self: center;
     background-color: #fff;
     display: inline-block;
     font-size: medium;
-    list-style-type: none;
     box-sizing: border-box;
     border-radius: 7px;
 }
 
 footer {
+
     color: #9380b7;
     text-align: center;
     font-size: small;
+    display: inline;
+}
+
+p {
+    margin: 10px 0 0 0;
 }

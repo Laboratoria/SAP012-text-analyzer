@@ -1,12 +1,12 @@
 import analyzer from './analyzer.js';
 
-let areaTexto = document.querySelector("[name='user-input']");
-let palavras = document.querySelector("[data-testid='word-count']");
-let caracteres = document.querySelector("[data-testid='character-count']");
-let semEspacos = document.querySelector("[data-testid='character-no-spaces-count']");
-let numeros = document.querySelector("[data-testid='number-count']");
-let soma = document.querySelector("[data-testid='number-sum']");
-let comprimento = document.querySelector("[data-testid='word-length-average']");
+const areaTexto = document.querySelector("[name='user-input']");
+const palavras = document.querySelector("[data-testid='word-count']");
+const caracteres = document.querySelector("[data-testid='character-count']");
+const semEspacos = document.querySelector("[data-testid='character-no-spaces-count']");
+const numeros = document.querySelector("[data-testid='number-count']");
+const soma = document.querySelector("[data-testid='number-sum']");
+const comprimento = document.querySelector("[data-testid='word-length-average']");
 
 document.getElementById("reset-button").addEventListener("click", limparTexto);
 
@@ -16,7 +16,6 @@ function limparTexto() {
     } else {
         return;
     }
-    console.log("ouvi o clique! ;)");
 }
 
 areaTexto.addEventListener("keyup", function () {
@@ -27,22 +26,3 @@ areaTexto.addEventListener("keyup", function () {
     soma.textContent = "Soma total dos números = " + analyzer.getNumberSum(areaTexto.value);
     comprimento.textContent = "Comprimento médio das palavras = " + analyzer.getAverageWordLength(areaTexto.value);
 })
-// para contar caracteres, preciso que:
-// selecionar os elementos html a serem alterados;
-// o código leia a textarea e descubra se seu conteúdo é diferente de 0;
-// fazer loop for para verificação de caracteres;
-// mostrar a contagem feita pelo analyzer em tempo real;
-
-/*let mostradores = Object.values(analyzer).map((contadores) => {
-});*/
-
-// para limpar o texto, preciso que:
-//1) o botão funcione; ok
-//2) o código descubra se a textarea está preenchida ou não;
-//3) desconsidere o comando se a textarea estiver vazia;
-
-
-
-//na função limparTexto, preciso que o botão apague o que está escrito... Tentei "value = "", não funcionou
-
-//TODO: escuchar eventos del DOM e invocar  los métodos del objeto 'analyzer'
