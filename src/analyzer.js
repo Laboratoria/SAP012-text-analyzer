@@ -23,12 +23,10 @@ const analyzer = {
   },
   getNumberCount: (text) => {
     const numbers = text.replace(/d+/g).split(" ").filter((word) => word !== "");
-    if (numbers === NaN || numbers === 0) {
+    if (parseFloat(numbers) >= 0) {
+      return numbers.length;
+    } else {
       return "0";
-    }
-    if (parseInt(numbers) >= 0) {
-      return numbers.length; {
-      }
     }
   },
   getNumberSum: (text) => {
@@ -36,7 +34,7 @@ const analyzer = {
     const regex = text.replace(/d+/g).split(" ").filter((word) => word !== "");
     console.log(regex);
     for (let i = 0; i < regex.length; i++) {
-      total += parseInt(regex[i]);
+      total += parseFloat(regex[i]);
       console.log(regex[i]);
     }
     return total;
