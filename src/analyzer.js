@@ -9,11 +9,9 @@ const analyzer = {
   getCharacterCountExcludingSpaces: (text) => {
     const spaces = text.replace(/[^a-zA-Z0-9]+/g, '').length;
     return spaces;
-
-    //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
   },
   getAverageWordLength: (text) => {
-    const cortaPalavra = text.split(" ").filter((word) => word !== "");
+    const cortaPalavra = text.split(" ");
     const totalPalavras = cortaPalavra.join("");
     if (text) {
       return totalPalavras.length / cortaPalavra.length;
@@ -26,7 +24,7 @@ const analyzer = {
     if (parseFloat(numbers) >= 0) {
       return numbers.length;
     } else {
-      return "0";
+      return 0;
     }
   },
   getNumberSum: (text) => {
@@ -38,7 +36,13 @@ const analyzer = {
       console.log(regex[i]);
     }
     return total;
-    //precisa retornar a soma dos números;
+
+    /*RESOLVER:
+    1) PRECISA DEVOLVER NaN COMO 0
+    2) PRECISA PEGAR OS NÚMEROS EM STRINGS COMPOSTAS POR OUTROS CARACTERES (ex: 110 bananas e 20 mamões = 2 números)
+    3) PRECISA SOMAR NÚMEROS EM STRINGS COMPOSTAS POR OUTROS CARACTERES (ex: 110 bananas e 20 mamões = 130)
+    4) HÁ UM ERRO NO COMPRIMENTO MÉDIO DE PALAVRAS
+    */
   },
 };
 export default analyzer;
