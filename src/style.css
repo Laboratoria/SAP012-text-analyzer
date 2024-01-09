@@ -1,6 +1,5 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 body {
@@ -61,7 +60,6 @@ textarea[:placeholder] {
     box-sizing: border-box;
     cursor: pointer;
     flex-grow: 3;
-
 }
 
 ul {
@@ -83,7 +81,6 @@ ul {
 }
 
 footer {
-
     color: #9380b7;
     text-align: center;
     font-size: small;
