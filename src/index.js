@@ -18,7 +18,7 @@ function limparTexto() {
     }
 }
 
-areaTexto.addEventListener("keyup", function () {
+areaTexto.addEventListener("input", function () {
     caracteres.textContent = analyzer.getCharacterCount(areaTexto.value) + " caractere(s)";
     palavras.textContent = analyzer.getWordCount(areaTexto.value) + " palavra(s)";
     semEspacos.textContent = analyzer.getCharacterCountExcludingSpaces(areaTexto.value) + " caracteres sem espaço";
